@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|ARM64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|ARM64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{95409B48-BD44-3F69-BBEC-14BBFAE487E3}</ProjectGuid>
+    <WindowsSDKDesktopARM64Support>true</WindowsSDKDesktopARM64Support>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.19041.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>ARM64</Platform>
+    <ProjectName>apriltag</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">G:\MedCare360\apriltag-master\BuildARM64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">apriltag.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">apriltagd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">G:\MedCare360\apriltag-master\BuildARM64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">apriltag.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">apriltag</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">G:\MedCare360\apriltag-master\BuildARM64\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">apriltag.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">apriltag</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">G:\MedCare360\apriltag-master\BuildARM64\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">apriltag.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">apriltag</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";apriltag_EXPORTS;_ARM_UWP</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";apriltag_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>G:\vcpkg\vcpkg\installed\arm64-uwp\lib\pthreadVC3.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;runtimeobject.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/MedCare360/apriltag-master/BuildARM64/Debug/apriltagd.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/MedCare360/apriltag-master/BuildARM64/Debug/apriltagd.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CMAKE_INTDIR="Release";apriltag_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";apriltag_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>G:\vcpkg\vcpkg\installed\arm64-uwp\lib\pthreadVC3.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;runtimeobject.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/MedCare360/apriltag-master/BuildARM64/Release/apriltag.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/MedCare360/apriltag-master/BuildARM64/Release/apriltag.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CMAKE_INTDIR="MinSizeRel";apriltag_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";apriltag_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>G:\vcpkg\vcpkg\installed\arm64-uwp\lib\pthreadVC3.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;runtimeobject.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/MedCare360/apriltag-master/BuildARM64/MinSizeRel/apriltag.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/MedCare360/apriltag-master/BuildARM64/MinSizeRel/apriltag.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";apriltag_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";apriltag_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\MedCare360\apriltag-master;\apriltag;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>G:\vcpkg\vcpkg\installed\arm64-uwp\lib\pthreadVC3.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;runtimeobject.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/MedCare360/apriltag-master/BuildARM64/RelWithDebInfo/apriltag.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/MedCare360/apriltag-master/BuildARM64/RelWithDebInfo/apriltag.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\MedCare360\apriltag-master\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Building Custom Rule G:/MedCare360/apriltag-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SG:/MedCare360/apriltag-master -BG:/MedCare360/apriltag-master/BuildARM64 --check-stamp-file G:/MedCare360/apriltag-master/BuildARM64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">D:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindFrameworks.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPythonLibs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\SelectLibraryConfigurations.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeCCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeSystem.cmake;G:\MedCare360\apriltag-master\CMake\apriltagConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Building Custom Rule G:/MedCare360/apriltag-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SG:/MedCare360/apriltag-master -BG:/MedCare360/apriltag-master/BuildARM64 --check-stamp-file G:/MedCare360/apriltag-master/BuildARM64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">D:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindFrameworks.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPythonLibs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\SelectLibraryConfigurations.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeCCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeSystem.cmake;G:\MedCare360\apriltag-master\CMake\apriltagConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">Building Custom Rule G:/MedCare360/apriltag-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SG:/MedCare360/apriltag-master -BG:/MedCare360/apriltag-master/BuildARM64 --check-stamp-file G:/MedCare360/apriltag-master/BuildARM64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">D:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindFrameworks.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPythonLibs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\SelectLibraryConfigurations.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeCCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeSystem.cmake;G:\MedCare360\apriltag-master\CMake\apriltagConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">Building Custom Rule G:/MedCare360/apriltag-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SG:/MedCare360/apriltag-master -BG:/MedCare360/apriltag-master/BuildARM64 --check-stamp-file G:/MedCare360/apriltag-master/BuildARM64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">D:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindFrameworks.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPythonLibs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\SelectLibraryConfigurations.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeCCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\3.22.1\CMakeSystem.cmake;G:\MedCare360\apriltag-master\CMake\apriltagConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="G:\MedCare360\apriltag-master\apriltag.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\apriltag_pose.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\apriltag_quad_thresh.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\g2d.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\getopt.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\homography.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\image_u8.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\image_u8x3.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\image_u8x4.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\matd.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\pam.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\pjpeg-idct.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\pjpeg.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\pnm.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\string_util.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\svd22.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\time_util.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\unionfind.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\workerpool.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\zarray.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\zhash.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\zmaxheap.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tag16h5.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tag25h9.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tag36h10.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tag36h11.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tagCircle21h7.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tagCircle49h12.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tagCustom48h12.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tagStandard41h12.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tagStandard52h13.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\MedCare360\apriltag-master\BuildARM64\ZERO_CHECK.vcxproj">
+      <Project>{BE885385-BC9C-306F-AE40-36F17DE048D0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\time_util.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

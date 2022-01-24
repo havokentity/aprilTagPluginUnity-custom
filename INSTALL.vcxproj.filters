@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\MedCare360\apriltag-master\CMakeFiles\ca77a2e33fbe7fdcdc16ff0b59d3215e\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5BB8C5EF-5C2C-358A-8113-EBDDC844FB5F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

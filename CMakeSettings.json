@@ -1,0 +1,51 @@
+﻿{
+    "configurations": [
+        {
+            "name": "x64-Debug",
+            "generator": "Ninja",
+            "configurationType": "Debug",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "buildRoot": "${projectDir}\\out\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "variables": [
+                {
+                    "name": "OpenCV_DIR",
+                    "value": "G:/opencv-src/out/install/x64-Release",
+                    "type": "PATH"
+                }
+            ]
+        },
+        {
+            "name": "x64-Release",
+            "generator": "Ninja",
+            "configurationType": "RelWithDebInfo",
+            "buildRoot": "${projectDir}\\out\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "cmakeToolchain": "G:/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake",
+            "variables": [
+                {
+                    "name": "VCPKG_PREFER_SYSTEM_LIBS",
+                    "value": "True",
+                    "type": "BOOL"
+                },
+                {
+                    "name": "OpenCV_DIR",
+                    "value": "G:/opencv-src/out/install/x64-Release",
+                    "type": "PATH"
+                },
+                {
+                    "name": "PTHREAD_LIBRARIES",
+                    "value": "G:/vcpkg/vcpkg/installed/x64-windows/lib/pthreadVC3.lib",
+                    "type": "FILEPATH"
+                }
+            ]
+        }
+    ]
+}

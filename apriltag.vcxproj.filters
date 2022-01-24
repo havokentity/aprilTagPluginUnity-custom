@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\MedCare360\apriltag-master\apriltag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\apriltag_pose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\apriltag_quad_thresh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\g2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\homography.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\image_u8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\image_u8x3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\image_u8x4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\matd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\pam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\pjpeg-idct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\pjpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\pnm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\string_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\svd22.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\time_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\unionfind.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\workerpool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\zarray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\zhash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\common\zmaxheap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tag16h5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tag25h9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tag36h10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tag36h11.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tagCircle21h7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tagCircle49h12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tagCustom48h12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tagStandard41h12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\MedCare360\apriltag-master\tagStandard52h13.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\MedCare360\apriltag-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ECC46024-0F66-31E0-A69F-76A137B5888E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

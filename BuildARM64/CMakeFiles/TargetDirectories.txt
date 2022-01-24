@@ -1,0 +1,5 @@
+G:/MedCare360/apriltag-master/BuildARM64/CMakeFiles/apriltag.dir
+G:/MedCare360/apriltag-master/BuildARM64/CMakeFiles/apriltag_demo.dir
+G:/MedCare360/apriltag-master/BuildARM64/CMakeFiles/INSTALL.dir
+G:/MedCare360/apriltag-master/BuildARM64/CMakeFiles/ALL_BUILD.dir
+G:/MedCare360/apriltag-master/BuildARM64/CMakeFiles/ZERO_CHECK.dir

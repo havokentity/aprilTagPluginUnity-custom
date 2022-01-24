@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\MedCare360\apriltag-master\BuildARM64\CMakeFiles\a18bb1fbedf3c6e8991d698ccce25158\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2644A770-8BF6-3BF9-BDCE-9B3130221E95}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
