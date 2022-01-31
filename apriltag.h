@@ -275,6 +275,8 @@ APRIL_TAG_RAJ_API zarray_t *apriltag_detector_detect(apriltag_detector_t *td, im
 
 APRIL_TAG_RAJ_API apriltag_rajcustom_detection_t rajcustom_get_detection(zarray_t* detections, int index);
 
+APRIL_TAG_RAJ_API apriltag_detection_t* get_detection(zarray_t* detections, int index);
+
 //APRIL_TAG_RAJ_API zarray_t* apriltag_detector_detect(apriltag_detector_t* td, int w, int h, uint8_t* buff);
 
 // Call this method on each of the tags returned by apriltag_detector_detect

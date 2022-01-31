@@ -546,3 +546,44 @@ double estimate_tag_pose(apriltag_detection_info_t* info, apriltag_pose_t* pose)
         return err2;
     }
 }
+
+apriltag_rajcustom_pose_t rajcustom_estimate_tag_pose(apriltag_detection_info_t* info, apriltag_pose_t* pose) {
+
+    apriltag_rajcustom_pose_t returnValue;
+
+    double err1, err2;
+    apriltag_pose_t pose1, pose2;
+    estimate_tag_pose_orthogonal_iteration(info, &err1, &pose1, &err2, &pose2, 50);
+    if (err1 <= err2) {
+        pose->R = pose1.R;
+        pose->t = pose1.t;
+        if (pose2.R) {
+            matd_destroy(pose2.t);
+        }
+        matd_destroy(pose2.R);
+        returnValue.err = err1;
+        returnValue.R0 = pose->R->data[0];
+        returnValue.R1 = pose->R->data[1];
+        returnValue.R2 = pose->R->data[2];
+        returnValue.R3 = pose->R->data[3];
+        returnValue.R4 = pose->R->data[4];
+        returnValue.R5 = pose->R->data[5];
+        returnValue.R6 = pose->R->data[6];
+        returnValue.R7 = pose->R->data[7];
+        returnValue.R8 = pose->R->data[8];
+
+        returnValue.t0 = pose->t->data[0];
+        returnValue.t1 = pose->t->data[1];
+        returnValue.t2 = pose->t->data[2];
+
+        return returnValue;
+    }
+    else {
+        pose->R = pose2.R;
+        pose->t = pose2.t;
+        matd_destroy(pose1.R);
+        matd_destroy(pose1.t);
+        returnValue.err = err2;
+        return returnValue;
+    }
+}

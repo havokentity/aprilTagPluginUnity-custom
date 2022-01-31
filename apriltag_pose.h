@@ -22,6 +22,13 @@ typedef struct {
     matd_t* t;
 } apriltag_pose_t;
 
+struct apriltag_rajcustom_pose {
+    double err;
+    double R0, R1, R2, R3, R4, R5, R6, R7, R8;
+    double t0, t1, t2;
+};
+typedef struct apriltag_rajcustom_pose apriltag_rajcustom_pose_t;
+
 /**
  * Estimate pose of the tag using the homography method described in [1].
  * @outparam pose
@@ -68,6 +75,8 @@ APRIL_TAG_RAJ_API void estimate_tag_pose_orthogonal_iteration(
  * @return Object-space error of returned pose.
  */
 APRIL_TAG_RAJ_API double estimate_tag_pose(apriltag_detection_info_t* info, apriltag_pose_t* pose);
+
+APRIL_TAG_RAJ_API apriltag_rajcustom_pose_t rajcustom_estimate_tag_pose(apriltag_detection_info_t* info, apriltag_pose_t* pose);
 
 #ifdef __cplusplus
 }

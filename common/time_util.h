@@ -34,7 +34,7 @@ either expressed or implied, of the Regents of The University of Michigan.
 typedef long long suseconds_t;
 #endif
 #ifdef _MSC_VER
-#define _ARM_UWP
+//#define _ARM_UWP
 #ifdef _ARM_UWP
 struct timeval {
     long    tv_sec;         /* seconds */

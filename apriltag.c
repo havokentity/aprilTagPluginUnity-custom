@@ -1447,6 +1447,14 @@ image_u8_t *apriltag_to_image(apriltag_family_t *fam, int idx)
     return im;
 }
 
+apriltag_detection_t* get_detection(zarray_t* detections, int index)
+{
+    apriltag_detection_t* det;
+    zarray_get(detections, index, &det);
+
+    return det;
+}
+
 apriltag_rajcustom_detection_t rajcustom_get_detection(zarray_t* detections, int index)
 {
     apriltag_detection_t* det;
